@@ -1,12 +1,14 @@
 {
   "questions": [
     {
+      "id": 0,
       "title": "مشکل در Auth در React",
       "description": "سلام من میخوام یه authentication ساده تو react بسازم اما این error رو بهم میده. نمیدونم مشکل از کجاست. عکس خروجی console رو هم گذاشتم که ببینید دقیقا چه مشکلی وجود داره",
       "date": "1652078448",
       "commentsCount": 20,
       "answers": [
         {
+          "id": 0,
           "username": "علی کیا",
           "description": "متغیر ENV رو توی فایلت تغییر بده درست میشه ",
           "date": "1652343468",
@@ -14,6 +16,7 @@
           "badVoteCount": 3
         },
         {
+          "id": 1,
           "username": "علی کیا",
           "description": "متغیر ENV رو توی فایلت تغییر بده درست میشه ",
           "date": "1652343468",
@@ -23,12 +26,14 @@
       ]
     },
     {
+      "id": 1,
       "title": "مشکل در Auth در React",
       "description": "سلام من میخوام یه authentication ساده تو react بسازم اما این error رو بهم میده. نمیدونم مشکل از کجاست. عکس خروجی console رو هم گذاشتم که ببینید دقیقا چه مشکلی وجود داره",
       "date": "1652078448",
       "commentsCount": 20,
       "answers": [
         {
+          "id": 0,
           "username": "علی کیا",
           "description": "متغیر ENV رو توی فایلت تغییر بده درست میشه ",
           "date": "1652343468",
@@ -36,6 +41,7 @@
           "badVoteCount": 3
         },
         {
+          "id": 1,
           "username": "علی کیا",
           "description": "متغیر ENV رو توی فایلت تغییر بده درست میشه ",
           "date": "1652343468",
@@ -45,12 +51,14 @@
       ]
     },
     {
+      "id": 2,
       "title": "مشکل در Auth در React",
       "description": "سلام من میخوام یه authentication ساده تو react بسازم اما این error رو بهم میده. نمیدونم مشکل از کجاست. عکس خروجی console رو هم گذاشتم که ببینید دقیقا چه مشکلی وجود داره",
       "date": "1652078448",
       "commentsCount": 20,
       "answers": [
         {
+          "id": 0,
           "username": "علی کیا",
           "description": "متغیر ENV رو توی فایلت تغییر بده درست میشه ",
           "date": "1652343468",
@@ -58,6 +66,7 @@
           "badVoteCount": 3
         },
         {
+          "id": 1,
           "username": "علی کیا",
           "description": "متغیر ENV رو توی فایلت تغییر بده درست میشه ",
           "date": "1652343468",
@@ -67,12 +76,14 @@
       ]
     },
     {
+      "id": 3,
       "title": "مشکل در Auth در React",
       "description": "سلام من میخوام یه authentication ساده تو react بسازم اما این error رو بهم میده. نمیدونم مشکل از کجاست. عکس خروجی console رو هم گذاشتم که ببینید دقیقا چه مشکلی وجود داره",
       "date": "1652078448",
       "commentsCount": 20,
       "answers": [
         {
+          "id": 0,
           "username": "علی کیا",
           "description": "متغیر ENV رو توی فایلت تغییر بده درست میشه ",
           "date": "1652343468",
@@ -80,6 +91,7 @@
           "badVoteCount": 3
         },
         {
+          "id": 1,
           "username": "علی کیا",
           "description": "متغیر ENV رو توی فایلت تغییر بده درست میشه ",
           "date": "1652343468",
@@ -89,12 +101,14 @@
       ]
     },
     {
+      "id": 4,
       "title": "مشکل در Auth در React",
       "description": "سلام من میخوام یه authentication ساده تو react بسازم اما این error رو بهم میده. نمیدونم مشکل از کجاست. عکس خروجی console رو هم گذاشتم که ببینید دقیقا چه مشکلی وجود داره",
       "date": "1652078448",
       "commentsCount": 20,
       "answers": [
         {
+          "id": 0,
           "username": "علی کیا",
           "description": "متغیر ENV رو توی فایلت تغییر بده درست میشه ",
           "date": "1652343468",
@@ -102,28 +116,7 @@
           "badVoteCount": 3
         },
         {
-          "username": "علی کیا",
-          "description": "متغیر ENV رو توی فایلت تغییر بده درست میشه ",
-          "date": "1652343468",
-          "goodVoteCount": 7,
-          "badVoteCount": 3
-        }
-      ]
-    },
-    {
-      "title": "مشکل در Auth در React",
-      "description": "سلام من میخوام یه authentication ساده تو react بسازم اما این error رو بهم میده. نمیدونم مشکل از کجاست. عکس خروجی console رو هم گذاشتم که ببینید دقیقا چه مشکلی وجود داره",
-      "date": "1652078448",
-      "commentsCount": 20,
-      "answers": [
-        {
-          "username": "علی کیا",
-          "description": "متغیر ENV رو توی فایلت تغییر بده درست میشه ",
-          "date": "1652343468",
-          "goodVoteCount": 7,
-          "badVoteCount": 3
-        },
-        {
+          "id": 1,
           "username": "علی کیا",
           "description": "متغیر ENV رو توی فایلت تغییر بده درست میشه ",
           "date": "1652343468",
