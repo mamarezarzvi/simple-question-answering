@@ -1,0 +1,17 @@
+.profile-bar {
+  display: flex;
+  align-items: center;
+  margin-right: 4rem;
+  cursor: pointer;
+
+  img {
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 50%;
+    margin-left: 1.2rem;
+  }
+
+  svg {
+    margin-right: 1.9rem;
+  }
+}

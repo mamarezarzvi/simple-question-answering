@@ -1,0 +1,20 @@
+@use "../../palette.scss";
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+  min-width: 126px;
+  font-weight: 700;
+  background-color: palette.$primary-color;
+  border: none;
+  border-radius: 6px;
+  font-family: "IranSans";
+  color: palette.$white;
+  cursor: pointer;
+
+  svg {
+    margin-left: 0.8rem;
+  }
+}

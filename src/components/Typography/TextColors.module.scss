@@ -1,0 +1,29 @@
+@use "../../palette.scss";
+
+.primary-text {
+  color: palette.$primary-color;
+}
+.gray-darker-text {
+  color: palette.$gray-darker;
+}
+.gray-dark-text {
+  color: palette.$gray-dark;
+}
+.gray-text {
+  color: palette.$gray-default;
+}
+.gray-light-text {
+  color: palette.$gray-light;
+}
+.gray-lightest-text {
+  color: palette.$gray-lightest;
+}
+.white-text {
+  color: palette.$white;
+}
+.success-text {
+  color: palette.$success;
+}
+.error-text {
+  color: palette.$error;
+}

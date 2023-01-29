@@ -1,0 +1,43 @@
+@use "../../palette.scss";
+
+@mixin text-base($size) {
+  margin: 0;
+  font-size: $size;
+  color: palette.$black;
+  font-weight: 400;
+}
+
+.text1 {
+  @include text-base(24px);
+  line-height: 36px;
+}
+
+.text2 {
+  @include text-base(16px);
+  line-height: 24px;
+}
+
+.text3 {
+  @include text-base(14px);
+  line-height: 20px;
+}
+
+.text4 {
+  @include text-base(12px);
+  line-height: 20px;
+}
+
+.text5 {
+  @include text-base((10px));
+  line-height: 16px;
+}
+
+.text--normal {
+  font-weight: 400;
+}
+.text--medium {
+  font-weight: 700;
+}
+.text--bold {
+  font-weight: 800;
+}
