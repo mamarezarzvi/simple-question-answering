@@ -11,6 +11,7 @@ export const strings = {
   timeTitle: "ساعت",
   dateTitle: "تاریخ",
   moreDetail: "مشاهده جزئیات",
+  questionDetail: "جزئیات سوال",
   answers: "پاسخ‌ها",
   submitAnswer: "پاسخ خود را ثبت کنید",
   writeYourAnswer: "پاسخ خود را بنویسید",
@@ -20,4 +21,5 @@ export const strings = {
   goodAnswer: "پاسخ خوب بود",
   badAnswer: "پاسخ خوب نبود",
   username: "الناز شاکردوست",
+  noAnswer: "هنوز پاسخی برای این سوال داده نشده است.",
 };

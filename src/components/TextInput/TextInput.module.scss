@@ -1,0 +1,25 @@
+@use "../../palette.scss";
+
+%input-style {
+  border-radius: 6px;
+  border: 1px solid palette.$gray-light;
+  background-color: palette.$white;
+  padding: 1.2rem 1.6rem;
+  color: palette.$black;
+  font-size: 14px;
+  font-family: "IranSans";
+
+  ::placeholder {
+    color: palette.$gray-default;
+  }
+}
+
+.input {
+  @extend %input-style;
+}
+
+.text-area {
+  @extend %input-style;
+  min-height: 160px;
+  resize: none;
+}

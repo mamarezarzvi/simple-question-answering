@@ -7,7 +7,9 @@ export type Answer = {
   description: string;
   date: string;
   goodVoteCount: number;
+  isUserVotedGood?: boolean;
   badVoteCount: number;
+  isUserVotedBad?: boolean;
 };
 
 export type Question = {
@@ -15,13 +17,17 @@ export type Question = {
   title: string;
   description: string;
   date: string;
-  commentsCount: number;
-  answers: Answer[] | undefined;
+  answers: Answer[];
 };
 
-const InitialState: { questions: Question[]; loading: boolean } = {
+const InitialState: {
+  questions: Question[];
+  loading: boolean;
+  selectedQuestionId: number | null;
+} = {
   loading: false,
   questions: [],
+  selectedQuestionId: null,
 };
 
 const QuestionsSlice = createSlice({
@@ -41,12 +47,18 @@ const QuestionsSlice = createSlice({
     },
     addAnswer(
       state,
-      action: PayloadAction<{ answer: Omit<Answer, "id">; questionId: number }>
+      action: PayloadAction<{
+        answer: Omit<Answer, "id" | "date" | "goodVoteCount" | "badVoteCount">;
+        questionId: number;
+      }>
     ) {
-      const id = state.questions[action.payload.questionId].answers?.length;
-      if (!id) return;
-      state.questions[action.payload.questionId].answers?.push({
+      const id = state.questions[action.payload.questionId].answers.length;
+      console.log("add", id);
+      state.questions[action.payload.questionId].answers.push({
         id,
+        date: Date.now().toString(),
+        goodVoteCount: 0,
+        badVoteCount: 0,
         ...action.payload.answer,
       });
     },
@@ -62,12 +74,34 @@ const QuestionsSlice = createSlice({
       state.questions[questionId] = produce(
         state.questions[questionId],
         (draft) => {
-          if (!draft.answers) return;
-
-          if (isUseful) draft.answers[answerId].goodVoteCount++;
-          else draft.answers[answerId].badVoteCount++;
+          const answer = draft.answers[answerId];
+          if (isUseful) {
+            if (!answer.isUserVotedGood) {
+              answer.goodVoteCount++;
+              answer.isUserVotedGood = true;
+            } else {
+              answer.goodVoteCount--;
+              answer.isUserVotedGood = false;
+            }
+          } else {
+            if (!answer.isUserVotedBad) {
+              answer.badVoteCount++;
+              answer.isUserVotedBad = true;
+            } else {
+              answer.badVoteCount--;
+              answer.isUserVotedBad = false;
+            }
+          }
         }
       );
+    },
+    setQuestionSelected(state, action: PayloadAction<number>) {
+      console.log(action.payload);
+      state.selectedQuestionId = action.payload;
+      window.history.pushState({}, "");
+    },
+    clearSelected(state) {
+      state.selectedQuestionId = null;
     },
   },
 });

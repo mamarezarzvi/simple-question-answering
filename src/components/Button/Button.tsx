@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { PropsWithChildren, ReactNode } from "react";
+import React, { PropsWithChildren, ReactNode } from "react";
 import styles from "./Button.module.scss";
 
 export enum ButtonVariant {
@@ -14,16 +14,22 @@ const buttonVariantClasses = {
   [ButtonVariant.Filled]: "",
 };
 export const Button: React.FC<
-  PropsWithChildren<{ icon?: ReactNode; variant?: ButtonVariant }>
-> = (props) => {
+  React.HTMLAttributes<HTMLButtonElement> & {
+    icon?: ReactNode;
+    variant?: ButtonVariant;
+  }
+> = (_props) => {
+  const { variant, icon, ...props } = _props;
   return (
     <button
+      {...props}
       className={clsx(
         styles["button"],
-        props.variant && buttonVariantClasses[props.variant]
+        variant && buttonVariantClasses[variant],
+        props.className
       )}
     >
-      {props.icon}
+      {icon}
       {props.children}
     </button>
   );
