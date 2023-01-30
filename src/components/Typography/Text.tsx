@@ -36,7 +36,7 @@ export const Text1: React.FC<TextProps> = (props) => {
     />
   );
 };
-
+//font-size: 16px
 export const Text2: React.FC<TextProps> = (props) => {
   return (
     <TextBase
@@ -45,7 +45,7 @@ export const Text2: React.FC<TextProps> = (props) => {
     />
   );
 };
-
+//font-size: 14px
 export const Text3: React.FC<TextProps> = (props) => {
   return (
     <TextBase
@@ -54,7 +54,7 @@ export const Text3: React.FC<TextProps> = (props) => {
     />
   );
 };
-
+//font-size: 12px
 export const Text4: React.FC<TextProps> = (props) => {
   return (
     <TextBase

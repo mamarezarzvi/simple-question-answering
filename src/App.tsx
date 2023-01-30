@@ -1,10 +1,12 @@
 import "./App.css";
 import { TopBar } from "./components/Header/TopBar";
+import { Questions } from "./components/Questions/Questions";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <TopBar />
+      <Questions />
     </div>
   );
 }

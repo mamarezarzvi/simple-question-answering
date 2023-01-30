@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import produce from "immer";
 
-type Answer = {
+export type Answer = {
   id: number;
   username: string;
   description: string;
@@ -10,7 +10,7 @@ type Answer = {
   badVoteCount: number;
 };
 
-type Question = {
+export type Question = {
   id: number;
   title: string;
   description: string;

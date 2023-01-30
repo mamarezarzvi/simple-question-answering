@@ -18,3 +18,15 @@
     margin-left: 0.8rem;
   }
 }
+
+.button--outlined {
+  border: 1px solid palette.$primary-color;
+  background-color: transparent;
+  color: palette.$primary-color;
+}
+
+.button--simple {
+  border: none;
+  background-color: palette.$white;
+  color: palette.$primary-color;
+}
